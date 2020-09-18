@@ -1,0 +1,12 @@
+spring:
+  redis:
+    port: 6379
+    password: N7cKDbBRC0xfP0D3
+    host: 47.100.201.41
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      #添加后，redis中的key为spring:session:myproject
+      namespace: myproject
+  port: 8080
